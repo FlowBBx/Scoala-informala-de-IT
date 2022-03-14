@@ -1,0 +1,106 @@
+* {
+margin: 0;
+padding: 0;
+}
+h1 {
+    margin: 0 auto;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 300px 100px 300px;
+}
+main > div img {
+    max-width: 800px;
+    max-height: 800px;
+    background-color: rgb(224, 224, 224);
+}
+main div:first-child {
+    display: block;  
+}
+main > div h3 {
+    margin: 30px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
+main > div > div {
+    text-align: center;
+}
+main > div > div p {
+    margin: 0 10px;
+    display: inline;
+}
+main > div p:first-child::before{
+    content: '\f005';
+    color: orange;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+main > div p:last-child::before{
+    content: '\f004';
+    color: rgb(199, 199, 199);
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+main > div > p {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 18px;
+}
+p::before{
+    margin: 0px 20px 0px 0px ;
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+}
+
+main > div:hover {
+    transition: 0.5s;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.219);
+}
+
+button{
+    cursor: pointer;
+    padding: 10px 20px 10px 20px;
+    margin: 0px 5px 30px 5px;
+    
+}
+
+main > div > div button:first-child:hover {
+
+    border: 2px rgb(0, 0, 0) solid;
+    background-color: rgb(255, 255, 255);
+    transition: 0.5s;
+    color: rgb(0, 0, 0);
+}
+
+main > div > div button:first-child {
+   
+    background-color: black;
+    color: white;
+}
+
+main > div > div button:last-child:hover {
+
+    border: 2px rgb(255, 253, 253) solid;
+    background-color: rgb(0, 0, 0);
+    transition: 0.5s;
+    color: rgb(255, 255, 255);
+}
+
+main > div > div button:last-child {
+   
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+#colorRed > p:last-child::before {
+    content: '\f004';
+    color: rgb(255, 0, 0);
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
