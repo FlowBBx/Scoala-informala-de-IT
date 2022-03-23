@@ -1,0 +1,219 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 10px 528px;
+}
+
+header {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+button {
+    box-sizing: border-box;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(106, 106, 236);
+    padding: 15px 30px 15px 30px;
+    border: solid;
+}
+button:hover {
+    box-shadow: 0px 0px 10px 0px ;
+    transition: 0.5s;
+    color: black; 
+    border: 1px solid gray;
+    border-radius: 5%;
+}
+body > :nth-child(2) > p , h4 , div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+div > div h1{
+    margin: 10px 5px 10px 0px;
+    border-right: 1px solid black;
+    padding: 0 5px;
+}
+#tab {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    margin: 0;
+    padding: 0;
+    font-size: small;
+}
+.main{
+    position: relative;
+    background-image: url(4.1.jpg);
+    width: 810px;
+    height: 500px;
+    display: block;
+    background-size:cover;
+}
+.main_1{
+    display: block;
+    position: absolute;
+    width: 250px;
+    height: auto;
+    padding: 15px 20px;
+    top: 50px;
+    left: 60px;
+    background-color: rgb(56, 56, 204);
+    color: white;
+    
+}
+p {
+    font-size: small;
+}
+h4 {
+    border-bottom: 1px dashed gray;
+    font-size: 15px; 
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+
+.main_2{
+    background-color: rgb(56, 56, 204);
+    color: white;
+    font-size: large;
+    position: absolute;
+    top: 230px;
+    left: 140px;
+    width: 470px;
+    font-size: 50px;
+    padding-left: 10px;
+}
+
+.secondMain { 
+    margin-top: 40px;
+    position: relative;
+    padding: 0;
+    
+}
+.secondMain1{
+    flex-direction: column;
+    width: 190px;
+    height: 280px;
+    background-color: rgb(179, 179, 179);
+    padding: 5px 20px 50px 20px;
+    align-items: center;
+}
+
+.for_a {
+    position: absolute;
+    top: 310px;
+    font-size: 12px;
+    text-decoration: none;
+    cursor: pointer;
+    padding-left: 145px;
+}
+
+.div240x90 {
+    font-size: 30px;
+    padding: 15px 20px 15px 20px;
+    justify-content: center;;
+    border:2px 2px 2px 2px;
+    background-color: rgb(94, 91, 91);
+    color: white;
+    border: 5px solid;
+    border-style: double; 
+    border-color: rgb(44, 16, 16);
+}
+
+h3 {
+    border-bottom: 2px dashed black;
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+
+.line {
+    border: 2px dashed gray;
+    margin: 30px auto;
+}
+
+.container{
+    display: flex;
+    justify-content: safe;
+}
+
+.container1{
+    background-color: rgb(70, 67, 67);
+    border: 5px solid;
+    border-style: double;
+    padding: 60px 40px 60px 40px ;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;   
+    margin-bottom: 10px; 
+    color: white;
+}
+.container2 {
+    display: inline-block;
+    padding: 10 50px; 
+    width: 430px;
+    height: 150px;
+    position: relative;
+    margin-left: 10px;
+}
+.for_a2{
+    position: absolute;
+    top: 125px;
+    right: 1px;
+    font-size: small;
+    text-decoration: none;
+}
+.for_a3 {
+    text-decoration: none;
+    border-bottom: 1px solid gray;
+    padding: 1px 0px;
+    font-size: small;
+}
+.for_h3{
+    margin: 7px 5px 5px 5px;
+}
+
+.container3 {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 15px 10px 15px;
+    background-color:  rgb(212, 212, 212);
+    align-items: right;
+    justify-content: left;
+}
+.underline {
+    border-bottom: 2px dashed gray;
+    margin-top: 5px ;
+}
+h5 {
+    color: rgb(70, 67, 67);
+    border-bottom: 2px dashed gray;
+    padding: 0px 30px 5px 0px;
+    font-size: larger;
+    margin-bottom: 5px;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.div174x100 {
+    padding: 35px 30px 35px 30px;
+    background-color: rgb(70, 67, 67);
+    margin: 10px 5px;
+    border: 5px solid;
+    border-style: double;
+    font-size: large;
+    color:  white;
+}
+
+footer{
+    margin-top: 10px;
+    height: 20px;
+    background-color: rgb(99, 99, 202);
+    color: white;
+    padding-top: 20px;
+    padding: 10px;
+}

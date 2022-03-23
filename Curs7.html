@@ -1,0 +1,88 @@
+|<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+    <script>
+        let array = [2,3,4,5,6];
+        let array2= [2,3, "ana are mere", "x y z"];
+        let pozitii= [0,1,2,3,4,5,6,7,8]; // idexul este cu -1 mai putin decat lungima array ului 
+
+        for(let value of array) {
+            //codul de aici se executa pentru fiecare iteratie
+        }
+        for(let value of array2) {
+            //codul de aici se executa pentru fiecare iteratie variabila value contiene fiecare element din array
+            console.log(value)
+        }
+        //value - valorile din array (variabila)
+        //array - functia
+
+
+        let toAdd = [2,-8,20,100];
+        let rezultat = 0;
+        /*for(let value of toAdd) {
+            rezultat += value;
+            console.log(rezultat, value)}*/
+
+        /*for (let i=0; i < toAdd.length; i++) {
+            let value = toAdd [i];
+            rezultat += value;
+            console.log(rezultat,value);*/
+
+        /*for (let i = toAdd.length - 1; i>= 0; i--) {
+            let value = toAdd [i];
+            rezultat += value;
+            console.log(rezultat,value);
+        }*/
+            /*
+            for ( primul pas [initializarea] ; conditie de functionare ; pasul urmator )
+            */
+
+            for( let i=1 ; i < 100; i++) {
+                console.log(i)
+            }
+
+            for( let i=0 ; i < 100; i+=2) {
+                console.log(i)
+            }
+
+//==================================================================================================
+            function contains (nr, what) {
+                for(let i=nr; i>0; i=Math.floor(i / 10)){
+                    if (i % 10===7) {
+                        return true;
+                    }
+                } 
+                return false;
+            }
+            console.log(contains(123123123, 7))
+
+            function bolt(nr) {
+                let directie = true; // true e spre dreapta false e spre stanga.
+            for( let i=1 ; i <= nr; i++) {
+                if (i % 7 === 0 || contains(i)){
+                    directie= !directie; // NU UITA SEMNUL EXCLAMARII NEGHEZA;
+                    console.log(i + "BOLT")
+                } else if (directie) {
+                    console.log (i +"spre dreapta");
+                }   else {
+                    console.log (i +"spre stanga");
+                }
+            }
+        }
+        console.log(bolt(50));
+
+//=======================================================================================================================================        
+            //DE AICI MA UIT LA INREGISTRARE. dupa incerc sa refac exercitiile (^.^)
+
+            
+    </script>
+            
+</head>
+<body>
+    
+</body>
+</html>
