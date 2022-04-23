@@ -1,0 +1,92 @@
+.display {   
+    width: 100%;max-width: 1000px;margin: 0 auto;}
+    
+.showTab{
+       background-color: orange;
+       padding: 10px 10px;
+    }
+.line {
+      display: flex;
+      justify-content: center;
+    }
+h1 {
+        display: flex;
+        justify-content: center;
+    }
+    
+.button  {
+        margin: 5px auto;
+        display: block;
+        width: 100%;
+        max-width: 140px;
+        padding: 5px 0;
+        border: 2px solid black;
+        background: transparent;
+        color: black;
+        font-size: 14px;
+        font-weight: 600;
+        border-radius: 4px;
+    }
+
+.button:hover {
+    background: black;
+    color: white;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+/* CSS in javascript */
+.modify {
+   display: flex;
+   justify-content: space-around;
+   margin-top: 10px;
+   background-color: rgb(23, 189, 189);
+   border: none;
+   border-radius: 9px;
+   font-size: larger;
+   padding: 10px 0;
+}
+
+.edit {
+   border-radius: 4px;
+   background-color:  blue;
+   color: white;
+   padding: 7px 40px;
+   border: 1px black solid;
+   cursor: pointer;
+}
+.edit:hover {
+   background-color: rgba(0, 0, 255, 0.603);
+   transition: 0.5s;  
+}
+
+.delete {
+   border-radius: 4px;
+   background-color:  red;
+   color: white;
+   padding: 7px 40px;
+   border: 1px black solid;
+   cursor: pointer;
+}
+.delete:hover {
+   background-color: rgba(255, 0, 0, 0.603);
+   transition: 0.5s;  
+}
+/* CSS in javascript */
+
+/* errori */
+.border {
+   border: 1px solid red;
+   color: rgba(255, 0, 0, 0.753)
+}
+
+.errormessage {
+   color: red;
+   font-size: larger;
+   display: flex;
+   justify-content: center;
+}
+
+
+
+    

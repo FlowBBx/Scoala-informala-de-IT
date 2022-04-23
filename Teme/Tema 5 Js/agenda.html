@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda</title>
+    <script src="agenda.js" defer></script>
+    <link rel="stylesheet" href="agenda.css">
+<body onload="date()">
+    <div class="display showTab">
+        <h1>Agenda</h1>
+        <div class="line">
+            <form onsubmit="add(event)">
+                <div>
+                    <input type="text" placeholder="Nume" name="Nume" class="req-field">
+                    <input type="text" placeholder="Numar" name="Numar" onkeypress="preventAlldigits(this,event)" onchange="validation(this)" class="req-field" ></div>
+                </div>
+                <span class="errormessage" id="von"></span>
+                <div class=".spaceOnButtons">
+                    <input type="submit" class="button" value="Adauga contact">
+                    <button type="button" class="button" onclick="save()"> Salvare </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="lista"></div>
+    
+</body>
+</html>
+ 
