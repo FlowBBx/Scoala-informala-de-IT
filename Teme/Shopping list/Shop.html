@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List</title>
+    <link rel="stylesheet" href="Shop.css">
+    <script src="Shop.js" defer></script>
+</head>
+<body onload="use()">
+    <div class="align">
+        <div class="fordiv">
+            <h3 class="neonText"> Shopping list</h3>
+            <form action="">
+                <div>
+                    <input type="text" id="docs" placeholder="To buy">
+                    <button type="button" onclick="container_Shop()"> Add Item </button>
+                </div>
+                <div class="flex">
+                    <button type="button" onclick="sortasc('name')">Sort asc</button>
+                    <button type="button" onclick="sortdesc('name')">Sort desc</button>
+                </div>
+                <div id ="add"></div>
+            </form>
+            <table id="list">
+                <thead>
+                    <tr class="hidden">
+                        <th>Item desciption</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+    
+</body>
+</html>
