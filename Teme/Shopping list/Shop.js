@@ -16,9 +16,9 @@ function sortList (a,b) {
         return 0
     }
 }
-//Functia de sortare ascendent
+//Functia de sortare ascendenta
 
-//Functia de sortare descendent
+//Functia de sortare descendenta
 function sortdesc () {
     state.list.sort(sortlist)
     use ();
@@ -34,7 +34,7 @@ function sortlist (a,b) {
     }  
 }
 
-//Functia de sortare descendent
+//Functia de sortare descendenta
 //Functia de listare
 
 function use () {
