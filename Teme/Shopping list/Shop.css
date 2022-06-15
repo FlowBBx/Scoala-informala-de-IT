@@ -25,17 +25,6 @@ button , input {
     border-radius: 6px
 }
 
-button:hover {
-    color:black;
-    background-color: rgb(105, 75, 75);
-    transition: 0.5s;
-}
-
-input:hover {
-    color:black;
-    background-color: rgb(105, 75, 75);
-    transition: 0.5s;
-}
 .neonText {
     color: #fff;
     text-shadow:

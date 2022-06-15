@@ -1,0 +1,96 @@
+.hidden:not(.active){
+    display: none;
+}
+
+.active{
+    display: flex;
+}
+
+
+body {
+    background-image: url("https://pics.freeartbackgrounds.com/fullhd/Sky_with_Sun_Background-1481.jpg");
+}
+
+
+.container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px!important;
+    padding-bottom: 50px;
+    padding-top:50px;
+    border-radius: 15px;
+    border: 1px solid black;
+    font-family: 'Playfair Display', serif;
+    background-color: rgba(233, 223, 223, 0.452);
+}
+
+#forButton {
+    display: flex;
+    justify-content: center
+}
+.btn{
+    margin: 0 10px;
+}
+.test {
+    display: block;
+    margin: 10px auto;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,
+                box-shadow .15s ease-in-out;
+}
+
+#add {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 50px auto;
+    
+}
+
+.forAdd{
+    background-color: rgba(233, 223, 223, 0.452);
+    max-width: 900px;
+    padding-bottom: 50px;
+    padding-top:50px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+
+#add div:nth-child(2) {
+    margin-left: 70px;
+}
+
+#add  p {
+    margin: 0;
+} 
+
+.tho {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: left;
+}
+
+span {
+    margin: 40px;
+    background-color: rgba(233, 223, 223, 0.452);
+    max-width: 200px;
+    padding-bottom: 20px;
+    padding-top:20px;
+    padding-left:20px;
+    padding-right:40px;
+    border: 1px solid black;
+    border-radius: 10px;
+}

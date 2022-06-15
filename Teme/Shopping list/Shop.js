@@ -21,7 +21,8 @@ function sortList (a,b) {
 //Functia de sortare descendent
 function sortdesc () {
     state.list.sort(sortlist)
-    use ()
+    use ();
+    console.log(state.list);
 }
 function sortlist (a,b) {
     if(a.name>b.name) {
@@ -59,6 +60,7 @@ function use () {
     }
     table.innerHTML = str; 
     document.querySelector("form").reset();
+    console.log(state.list);
 }   
 
 //Functia de listare
@@ -73,8 +75,9 @@ function container_Shop () {
         } else {
             state.list.push({
                 name:name,
-                action: `<button onclick="mark(${state.list.length})">Mark as buyed</button>`,
-                buyed: false
+                action: `<button onclick="mark(this)" id="${state.list.length}">Mark as buyed</button>`,
+                buyed: false,
+                id: state.list.length
             })
         }
         
@@ -84,8 +87,8 @@ function container_Shop () {
 
 
 function mark(event) {
-    for(let elem of state.list) {
-        if(state.list.indexOf(elem) === event) {
+    for(const elem of state.list) {
+        if(elem.id == event.id) {
             elem.buyed = true;
         }
     }
