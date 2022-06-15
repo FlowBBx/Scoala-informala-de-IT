@@ -55,86 +55,23 @@ async function getWeather() {
     let response = await data_base.json();
     state_2 = response.list;
     filterData(); 
-    let theDiv = document.querySelector("#add2 #a");
-    let theDiv1 = document.querySelector("#add2 #b");
-    let theDiv2 = document.querySelector("#add2 #c");
-    let theDiv3 = document.querySelector("#add2 #d");
-    let theDiv4 = document.querySelector("#add2 #e");
-    let theDiv5 = document.querySelector("#add2 #f");
-    for(i=0; i<filteredData[0].length;i++) {
-        theDiv.innerHTML+= 
-        `   
-            <span >
-                <p>Day: ${filteredData[0][i].dt_txt.slice(0,11)} </p>
-                <img src="http://openweathermap.org/img/w/${filteredData[0][i].weather[0].icon}.png"><br>
-                <p>Hour: ${filteredData[0][i].dt_txt.substr(10)} </p>
-                <p>Temperature: ${filteredData[0][i].main.temp} °C </p>
-                <p>Description: ${filteredData[0][i].weather[0].description} </p>
-             </span>
-        `
-    }
-    for(i=0; i<filteredData[1].length;i++) {
-        theDiv1.innerHTML+= 
-        `
-            <span>
-                <p>Day: ${filteredData[1][i].dt_txt.slice(0,11)} </p>
-                <img src="http://openweathermap.org/img/w/${filteredData[1][i].weather[0].icon}.png"><br>
-                <p>Hour: ${filteredData[1][i].dt_txt.substr(10)} </p>
-                <p>Temperature: ${filteredData[1][i].main.temp} °C </p>
-                <p>Description: ${filteredData[1][i].weather[0].description} </p>
-             </span>
-        `
-    }
-    for(i=0; i<filteredData[2].length;i++) {
-        theDiv2.innerHTML+= 
-        `
-            <span>
-                <p>Day: ${filteredData[2][i].dt_txt.slice(0,11)} </p>
-                <img src="http://openweathermap.org/img/w/${filteredData[2][i].weather[0].icon}.png"><br>
-                <p>Hour: ${filteredData[2][i].dt_txt.substr(10)} </p>
-                <p>Temperature: ${filteredData[2][i].main.temp} °C</p>
-                <p>Description: ${filteredData[2][i].weather[0].description} </p>
-             </span>
-        `
-    }
-    for(i=0; i<filteredData[3].length;i++) {
-        theDiv3.innerHTML+= 
-        `
-            <span >
-                <p>Day: ${filteredData[3][i].dt_txt.slice(0,11)} </p>
-                <img src="http://openweathermap.org/img/w/${filteredData[3][i].weather[0].icon}.png"><br>
-                <p>Hour: ${filteredData[3][i].dt_txt.substr(10)} </p>
-                <p>Temperature: ${filteredData[3][i].main.temp} °C</p>
-                <p>Description: ${filteredData[3][i].weather[0].description} </p>
-             </span>
-        `
-    }
-    for(i=0; i<filteredData[4].length;i++) {
-        theDiv4.innerHTML+= 
-        `
-            <span>
-                <p>Day: ${filteredData[4][i].dt_txt.slice(0,11)} </p>
-                <img src="http://openweathermap.org/img/w/${filteredData[4][i].weather[0].icon}.png"><br>
-                <p>Hour: ${filteredData[4][i].dt_txt.substr(10)} </p>
-                <p>Temperature: ${filteredData[4][i].main.temp} °C</p>
-                <p>Description: ${filteredData[4][i].weather[0].description} </p>
-             </span>
-        `
-    }
-    for(i=0; i<filteredData[5].length;i++) {
-        theDiv5.innerHTML+= 
-        `
-            <span>
-                <p>Day: ${filteredData[5][i].dt_txt.slice(0,11)} </p>
-                <img src="http://openweathermap.org/img/w/${filteredData[5][i].weather[0].icon}.png"><br>
-                <p>Hour: ${filteredData[5][i].dt_txt.substr(10)} </p>
-                <p>Temperature: ${filteredData[5][i].main.temp} °C</p>
-                <p>Description: ${filteredData[5][i].weather[0].description} </p>
-             </span>
-        `
-    }
+    let theDiv = document.querySelectorAll("#add2 .day");
     
-    
+    for(j=0; j<=5; j++){
+        for(i=0; i<filteredData[j].length;i++) {
+            theDiv[j].innerHTML+= 
+            `   
+                <span >
+                    <p>Day: ${filteredData[j][i].dt_txt.slice(0,11)} </p>
+                    <img src="http://openweathermap.org/img/w/${filteredData[j][i].weather[0].icon}.png"><br>
+                    <p>Hour: ${filteredData[j][i].dt_txt.substr(10)} </p>
+                    <p>Temperature: ${filteredData[j][i].main.temp} °C </p>
+                    <p>Description: ${filteredData[j][i].weather[0].description} </p>
+                 </span>
+            `
+        }
+    }
+
     let x = document.querySelectorAll("#add2 div");
         for(let val of x) {
             val.classList.add("hidden"); 
@@ -173,35 +110,27 @@ function filterData() {
     }
 }
 function removeHTML (){
-    let a = document.querySelector("#add2 #a");
-    let b = document.querySelector("#add2 #b");
-    let c = document.querySelector("#add2 #c");
-    let d = document.querySelector("#add2 #d");
-    let e = document.querySelector("#add2 #e");
-    let f = document.querySelector("#add2 #f");
-    a.remove();
-    b.remove();
-    c.remove();
-    d.remove();
-    e.remove();
-    f.remove();
+    let a = document.querySelectorAll("#add2 .day");
+    for(let val of a){
+        val.remove();
+    }
+    
     let non = document.querySelector("#add2");
     non.innerHTML = 
     `
-    <div id="a"></div>
-    <div id="b"></div>
-    <div id="c"></div>
-    <div id="d"></div>
-    <div id="e"></div>
-    <div id="f"></div>
-    
+    <div id="a" class="day"></div>
+    <div class="day"></div>
+    <div class="day"></div>
+    <div class="day"></div>
+    <div class="day"></div>
+    <div class="day"></div>
     `
 }
 
 function classAdd (idx) {
     let y = document.querySelector("#add2 #a");
             y.classList.add("hidden");
-    let x = document.querySelectorAll("#add2 div");
+    let x = document.querySelectorAll("#add2 .day");
         for(let val of x) {
             val.classList.remove("active");   
         }
