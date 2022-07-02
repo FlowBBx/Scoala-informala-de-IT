@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produse</title>
+    <script src="script/Products.js" defer></script>
+    <link rel="stylesheet" href="style/Products.css" />
+    <script
+      src="https://kit.fontawesome.com/fc0520f591.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script/template.js" defer></script>
+    <link rel="stylesheet" href="style/homepage.css" />
+    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="style/Animation.css" />
+  </head>
+  <body onload="getData()">
+    <header-component> </header-component>
+
+    <div id="animate">
+      <div class="loadingio-spinner-spinner-ha6pemqesii">
+        <div class="ldio-yt2f49yn04i">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <nav>
+        <div id="mySidebar" class="sidebar">
+          <p>Produse</p>
+          <a href="#" class="button active" onclick="hide(0)"
+            ><i class="fa-solid fa-headphones-simple"></i>Audio</a
+          >
+          <a href="#" class="button" onclick="hide(1)"
+            ><i class="fa-solid fa-laptop"></i>Laptop</a
+          >
+          <a href="#" class="button" onclick="hide(2)"
+            ><i class="fa-solid fa-tv"></i>TV</a
+          >
+          <a href="#" class="button" onclick="hide(3)"
+            ><i class="fa-solid fa-mobile"></i>Telefon</a
+          >
+        </div>
+        <div id="main">
+          <button class="openbtn" onclick="openNav(event)">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+      <div>
+        <div id="onDraw" class="products-container test"></div>
+      </div>
+    </div>
+  </body>
+</html>

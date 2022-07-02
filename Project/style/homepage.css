@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+#Homepage body main {
+  background: rgb(34, 43, 69);
+}
+
+.carousel_JS {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 40px 0;
+  opacity: 80%;
+}
+
+.carousel-control-next:hover,
+.carousel-control-prev:hover {
+  background: rgba(0, 0, 0, 0.4);
+  transition: 0.3s;
+}
+
+.carousel_JS_images {
+  height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  max-height: 500px;
+}
+
+.products .container {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.products .polaroid .card-container a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  max-width: 400px;
+  margin-right: 40px;
+}
+
+.products .polaroid .card-container a:hover img {
+  position: relative;
+}
+
+.products .polaroid .card-container a:hover img {
+  filter: brightness(70%);
+  transition: 0.4s;
+}
+
+.products .card-container a:hover::after {
+  background: rgba(0, 0, 0, 0.3);
+  transition: 0.4s;
+}
+
+.products .card-container p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+  z-index: 2;
+  width: 100%;
+  text-align: center;
+}
+
+.div_caset2_text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.822);
+  width: 60.5%;
+  max-height: 417px;
+  margin-left: 40px;
+  border: 2px solid gray;
+  border-radius: 20px;
+}
+
+.div_caset1_text li p {
+  color: rgb(103, 119, 136);
+  font-family: "Roboto", sans-serif;
+  line-height: 22px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 1023px) {
+  #Homepage main .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #Homepage main .container ul {
+    margin: 40px 0 20px 0;
+  }
+}

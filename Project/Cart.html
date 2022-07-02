@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cos</title>
+    <link rel="stylesheet" href="style/Cart.css" />
+    <script src="script/Cart.js" defer></script>
+    <script src="script/template.js" defer></script>
+    <link rel="stylesheet" href="style/main.css" />
+    <script
+      src="https://kit.fontawesome.com/fc0520f591.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body onload="draw();" id="Cart">
+    <header-component></header-component>
+    <main>
+      <div class="shop-container" id="shop-container">
+        <div id="cart-container"></div>
+        <div class="total">
+          <h1>Sumar comanda</h1>
+          <div>
+            <p>Total</p>
+            <p class="total-price">0</p>
+          </div>
+          <button onclick="order()">Finalizeaza comanda</button>
+        </div>
+      </div>
+
+      <div class="place-order hidden">
+        <h1>Multumimi ca ati comandat de la noi!</h1>
+        <p>Vei primi un email de confirmare in cel mai scurt timp.</p>
+        <img src="images/completed.png" alt="" />
+        <a href="Products.html">Produse</a>
+      </div>
+    </main>
+  </body>
+</html>

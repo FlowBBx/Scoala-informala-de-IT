@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: rgb(11, 15, 25);
+}
+
+/* CSS for top bar */
+.nav {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: #29305f;
+  padding: 13px;
+}
+
+.add-to-cart-btn {
+  display: block;
+  background: #3985e0;
+  background: -webkit-linear-gradient(left, #4a60c1 10%, #3985e0);
+  background: linear-gradient(to right, #4a60c1 10%, #3985e0);
+  font-size: 30px;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+}
+.add-to-cart-btn:hover {
+  cursor: pointer;
+  opacity: 80%;
+  background: #0f4d98;
+  background: -webkit-linear-gradient(left, #101d54 10%, #093265);
+  background: linear-gradient(to right, #122267 10%, #07203f);
+  transition-duration: 0.4s;
+}
+
+.nav_input {
+  padding: 12px;
+  font-size: 17px;
+  border-radius: 30px;
+  border: 1px solid gray;
+  max-width: 400px;
+  width: 400px;
+}
+.search_icon {
+  padding: 12px;
+  border-radius: 30px;
+  position: relative;
+  right: 45px;
+}
+/* CSS for left bar */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  background-color: rgb(17, 24, 39);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  display: block;
+  color: rgb(209, 213, 219);
+  width: 100%;
+  max-width: 140px;
+  margin: 6px auto;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.sidebar p {
+  display: block;
+  width: 100%;
+  max-width: 140px;
+  margin: 10px auto;
+  color: rgb(107, 114, 128);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+.sidebar a i {
+  margin-right: 6px;
+  font-size: 18px;
+}
+
+.sidebar a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  transition: 0.4s;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px 15px;
+  border: none;
+  background: transparent;
+  color: white;
+}
+
+.openbtn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  transition: 0.4s;
+}
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 16px;
+}
+
+/* CSS for div elements */
+.products-container > div {
+  background-color: rgb(17, 24, 39);
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-radius: 8px;
+  box-shadow: rgb(0 0 0 / 24%) 0px 1px 2px;
+  background-image: none;
+  overflow: hidden;
+}
+
+/* Css for elements innerHTML  */
+.products-container {
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.product-box {
+  text-decoration: none;
+}
+
+.products-container > div {
+  padding: 0 0 20px 0;
+  text-align: center;
+}
+
+.products-container > div img {
+  width: 100%;
+}
+.products-container .divFromJS h3 {
+  color: rgb(189, 200, 240);
+  padding: 10px 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+.products-container .divFromJS_button p {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+.products-container > div:hover {
+  box-shadow: 0 0 8px 2px rgb(255 255 255 / 40%);
+  transition: 0.4s;
+  cursor: pointer;
+  transform: scale3d(1.02, 1.02, 1);
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.products-container > div div:last-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.products-container > div div:last-child p {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 767px) {
+  .products-container > div {
+    flex: 1 0 100%;
+    max-width: 400px;
+    margin: 10px auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .products-container > div {
+    flex: 1 0 46%;
+    max-width: 46%;
+    margin: 10px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .products-container > div {
+    flex: 1 0 30.3%;
+    max-width: 30.3%;
+    margin: 20px;
+  }
+}
+
+.divFromJS_image {
+  width: 300px;
+}
+
+.hidden:not(.active) {
+  display: none;
+}
+
+.button.active {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+}

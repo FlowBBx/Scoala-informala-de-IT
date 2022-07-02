@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail</title>
+    <script src="script/template.js" defer></script>
+    <link rel="stylesheet" href="style/main.css" />
+    <script src="script/Details.js" defer></script>
+    <link rel="stylesheet" href="style/details.css" />
+    <!-- carousel -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/fc0520f591.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="style/Animation.css" />
+  </head>
+  <body onload="getData()" id="Details">
+    <header-component></header-component>
+    <div id="animate" class="hidden">
+      <div class="loadingio-spinner-spinner-ha6pemqesii">
+        <div class="ldio-yt2f49yn04i">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+    <main>
+      <div class="container">
+        <div id="carousel-container">
+          <section class="swiper-section">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper"></div>
+              <div class="swiper-button-next" slot="button-next"></div>
+              <div class="swiper-button-prev" slot="button-prev"></div>
+            </div>
+          </section>
+        </div>
+        <div id="data-container"></div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --main-font: "Poppins", sans-serif;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: white;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+body main {
+  margin: 30px 0;
+}
+
+.swiper {
+  width: 100%;
+  max-width: 1000px;
+  height: 300px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#Details .container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+#Details h2 {
+  font-family: var(--main-font);
+  color: #212b36;
+  text-align: center;
+  font-size: 30px;
+  margin: 20px 0;
+}
+
+#Details p {
+  font-family: var(--main-font);
+  color: rgb(99, 115, 129);
+  font-size: 16px;
+}
+
+.cart-box {
+  margin: 20px 0;
+}
+
+.cart-box div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart-box label {
+  display: block;
+  color: rgb(99, 115, 129);
+  font-size: 16px;
+  font-family: var(--main-font);
+  margin: 6px 0;
+}
+
+.cart-box input {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 60px;
+  height: 40px;
+  border: 1px solid rgb(205 205 205);
+  border-radius: 4px;
+  padding: 0 6px;
+}
+
+.cart-box input:hover {
+  border: 1px solid black;
+}
+.cart-box input:focus {
+  outline: none;
+  border: 2px solid rgb(36, 153, 239);
+}
+
+.cart-box button {
+  display: inline-block;
+  padding: 12px 0;
+  border: none;
+  background: rgb(36, 153, 239);
+  width: 100%;
+  max-width: 140px;
+  color: white;
+  border-radius: 4px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.cart-box button i {
+  margin-right: 4px;
+}
+
+.cart-box button:hover {
+  background: rgb(26, 119, 205);
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+#Details .product-bottom {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#Details .product-details {
+  flex: 1 0 50%;
+  max-width: 220px;
+}
+
+#Details .product-bottom .description {
+  flex: 1 0 70%;
+  max-width: 70%;
+}
+
+#Details .product-bottom .description P:first-child {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+#Details .price h3 {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1;
+  color: #d23f57;
+  text-transform: none;
+  white-space: normal;
+  margin: 10px 0 20px 0;
+}
+
+#Details .stoc h5 {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: none;
+  white-space: normal;
+}
+
+#Details .stoc {
+  background-color: #fff;
+  color: #2b3445;
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px rgb(3 0 71 / 33%);
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+}
+
+#Details .stoc p {
+  color: rgb(51, 208, 103);
+  font-size: 12px;
+  font-weight: 600;
+  background-color: rgb(231, 249, 237);
+  border-radius: 8px;
+  padding: 3px 12px;
+  display: inline-flex;
+  margin: 20px 0 10px 0;
+}
+
+@media screen and (max-width: 1023px) {
+  .product-bottom {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
