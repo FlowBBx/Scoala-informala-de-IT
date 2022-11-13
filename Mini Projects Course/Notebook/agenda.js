@@ -1,9 +1,5 @@
 let state = {
     list: [
-        {
-            Nume:"Ion",
-            Numar:"0123456789",
-        },
     ],
     xEdit:null,
 }
@@ -21,7 +17,7 @@ function validateFormData() {
     return isInvalid;
 }
 function date() {
-    let tab = document.querySelector("#lista");
+    let tab = document.querySelector("#list");
     let str = "";
     for (let i = 0; i< state.list.length; i++) {
         let elements = state.list[i];
@@ -31,7 +27,7 @@ function date() {
         <div> Numar:&nbsp${elements.Numar}</div>
         <div>
             <button onclick="del(${i})" class="delete" > Delete </button>
-            <button onclick="edit(${i})" class="edit" > Edit </button>
+            <button onclick="edit(${i})" class="theEdit" > Edit </button>
         </div>
     </div>
     `;
@@ -55,7 +51,6 @@ function save (){
         state.list[state.xEdit] = {
             Nume: nume,
             Numar: numar 
-  
         }
     }
     date()

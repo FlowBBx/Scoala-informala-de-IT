@@ -8,7 +8,7 @@
     <script src="agenda.js" defer></script>
     <link rel="stylesheet" href="agenda.css">
 <body onload="date()">
-    <div class="display showTab">
+    <div class="display">
         <h1>Agenda</h1>
         <div class="line">
             <form onsubmit="add(event)">
@@ -17,14 +17,14 @@
                     <input type="text" placeholder="Numar" name="Numar" onkeypress="preventAlldigits(this,event)" onchange="validation(this)" class="req-field" ></div>
                 </div>
                 <span class="errormessage" id="von"></span>
-                <div class=".spaceOnButtons">
+                <div class="edit">
                     <input type="submit" class="button" value="Adauga contact">
                     <button type="button" class="button" onclick="save()"> Salvare </button>
                 </div>
             </form>
         </div>
     </div>
-    <div id="lista"></div>
+    <div id="list"></div>
     
 </body>
 </html>
