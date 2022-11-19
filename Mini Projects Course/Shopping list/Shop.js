@@ -66,8 +66,6 @@ function use () {
 //Functia de listare
 // /Functia de adaugare
 function container_Shop () {
-        let us = document.querySelector(".hidden")
-        us.classList.add("unhidden")
         let name = document.querySelector("#docs").value
         if (name === "") {
             alert("Please enter something to buy")
