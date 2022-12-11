@@ -126,7 +126,6 @@ span {
 }
 
 .day {
-    border: 1px solid red;
     display: grid;
     grid-template-columns: 300px 300px 300px 300px 300px;
     align-self: center;
